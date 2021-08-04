@@ -1,0 +1,27 @@
+img {
+    max-width: 100%;
+}
+
+body {
+    /* border-top: 1px solid #3d8bfd; */
+    background-color: #f8f9fa;
+    /* background-color: #e9ecef; */
+  }
+
+.header-img {
+    max-width: 150px;
+    margin: auto;
+}
+.header img {
+    border-radius: 50%;
+}
+.accordion-body {
+    background-color: #fff;
+}
+.accordion-button {
+    background-color: #d1e7dd;
+}
+.accordionMyBg {
+    /* background-color: #f0f7f4; */
+    background-color: #fff3cd;
+}
