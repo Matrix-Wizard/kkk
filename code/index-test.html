@@ -7,21 +7,64 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <title>Художник Константинов Константин</title>
-    <base target="_blank">
+    <!-- <base target="_blank"> -->
   </head>
   <body>
-      <header class="header text-center">
+    <div class="container-fluid p-0">
+      <nav class="nav fs-5 justify-content-center nav-tabs flex-column flex-sm-row text-center" target="_self">
+        <a class="nav-link active" aria-current="page" href="#" target="_self">Главная</a>
+        <a class="nav-link" href="html/gallery.html" target="_self">Галерея</a>
+        <a class="nav-link" href="html/sale.html" target="_self">В наличии</a>
+        <a class="nav-link" href="html/news.html" target="_self">Новости</a>
+      </nav>
+    </div>
+
+      <!-- <header class="header text-center">
         <div class="container">
             <div class="header-img mt-4 mb-2">
-              <img src="img/logo-artist.jpg" alt="">
+              <img src="img/logo-artist.jpg" >
             </div>
             <h1 class="lead fs-4">
               Художник<br>Константинов Константин<br>Константинович
             </h1>
             <p><a href="en.html" target="_self">Translate to English</a></p>
+        </div>
+        <hr>
+      </header> -->
+      <header class="mt-3">
+        <div class="container">
+          <h1 class="fs-4 text-center text-muted mb-3">
+            Художник Константинов Константин Константинович
+          </h1>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://sun9-10.userapi.com/impf/c837126/v837126921/4023d/YXEcT-8ihn8.jpg?size=2000x1333&quality=96&sign=9fe623d7cda36939a11e6ef612404ce1&type=album" class="d-block w-100" alt="..." height="300px" style="object-fit:cover">
+              </div>
+              <div class="carousel-item">
+                <img src="https://sun9-19.userapi.com/impf/c840431/v840431975/9ba9/yqJOcxxIhYM.jpg?size=2000x1484&quality=96&sign=729e832048b5a7312872776e7cfeaa81&type=album" class="d-block w-100" alt="..." height="300px" style="object-fit:cover">
+              </div>
+              <div class="carousel-item">
+                <img src="https://sun9-14.userapi.com/impf/c837732/v837732921/218c8/QL3myFGOGXo.jpg?size=2000x1333&quality=96&sign=f9baa842eecb049a56dd3be16b3e2d27&type=album" class="d-block w-100" alt="..." height="300px" style="object-fit:cover">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
         </div>
         <hr>
       </header>
@@ -35,20 +78,27 @@
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                               Портрет на заказ
                             </button>
                           </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <strong>Классический портрет</strong><br>
-                                Пишу маслом, пастелью, карандашом или другим материалом, исходя из Ваших интересов и поставленных задач. <br>
-                                Примеры можно посмотреть на <a href="http://k-konstantinov.ru">странице портретов</a>.
-                                <br><br>
+                                Портрет пишется маслом, пастелью, карандашом или другим материалом, исходя из Ваших интересов и поставленных задач.<br/>
+                                Примеры созданных мною портретов можно посмотреть на <a href="https://photos.app.goo.gl/C21sTwSjcqbKzd1F9">Google Фото</a>.
+                                <div class="mt-1">
+                                  <img width="100" height="130" class="mt-1" src="https://sun9-44.userapi.com/impf/c837138/v837138921/15cf9/Qk356Cj2zeU.jpg?size=532x689&quality=96&sign=dd1717c4121368de5e616bac0abf9a65&type=album">
+
+                                  <img class="mt-1" width="100" height="130" src="https://sun9-59.userapi.com/impf/c837137/v837137921/160aa/wKru04qATWQ.jpg?size=447x600&quality=96&sign=6898eb929e58a3fb84b82493d984b4a9&type=album">
+
+                                  <img width="100" height="130" class="mt-1" src="https://sun9-68.userapi.com/impf/c837137/v837137921/1609b/qFxV1NW47Ik.jpg?size=461x600&quality=96&sign=e2ac4359cc3669489b6e2adbe565b031&type=album">
+                                </div>
+                                <br>
                                 <strong>Портрет в стиле поп-арт</strong><br>
-                                Это портрет сделанный в современном стиле, с добавлением традиций живописи великих мастеров прошлого. <br>
-                                Пример можно посмотреть в <a href="https://www.instagram.com/p/BMWj78-gG1-/">инстаграм-посте</a>. <br>
-                                Часть работ лежит <a href="https://photos.app.goo.gl/qyadtRfQjfjV4gXSA">здесь</a>
+                                Это портрет сделанный в современном стиле, с добавлением традиций живописи великих мастеров прошлого.<br/>
+                                Перейти в <a href="#">галерею поп-арт портретов</a>
+
                             </div>
                           </div>
                         </div>
@@ -60,11 +110,13 @@
                           </h2>
                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                В наличии и написание картин на заказ. <br>
-                                Пейзажи, натюрморты, композиции... <br>
-                                Для написание пейзажей, считаю важным выходить на пленэры, чтобы писать с натуры и передавать состояния.<br>
-                                Картины можно посмотреть в альбомах группы <a href="https://vk.com/albums-133788376">вконтакте</a> и <a href="https://www.facebook.com/pg/konstantinovkk/photos/?tab=albums&ref=page_internal">фейсбук</a>. <br>
-                                Картины в наличии размещаю на зарубежном сайте <a href="https://www.artfinder.com/artist/konstantinovk/">artfinder.com</a>. Вычитайте 40% от изначальной цены (это комиссия сайта).
+                              Картины «в наличии» можно посмотреть в альбоме <a href="#">Google Фото</a>.<br/>
+                              Общее портфолио работ можно посмотреть перейдя в раздел <a href="#">Галерея</a>.
+                              <div class="mt-1">
+                                <img class="mt-1" src="http://placehold.it/130x100" >
+                                <img class="mt-1" src="http://placehold.it/130x100" >
+                                <img class="mt-1" src="http://placehold.it/130x100" >
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -77,10 +129,29 @@
                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 Если объём росписей большой, тогда подключаю к работе ещё нескольких художников. На одном из объектов руководил бригадой художников численностью до 250 человек (роспись Морского собора). <br>
-                                Примеры можно посмотреть в альбоме группы <a href="https://vk.com/album-133788376_243256843">вконтакте</a> или <a href="https://www.facebook.com/media/set/?vanity=konstantinovkk&set=a.609410495916757">фейсбук</a>.
+                                Перейти в альбом <a href="#">"Роспись стен"</a>
                             </div>
                           </div>
                         </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              Иконописная мастерская
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Написание икон на закза.<br>
+                              Перейти в альбом <a href="#">"Иконопись"</a>
+                              <div class="mt-1">
+                                <img class="mt-1" src="http://placehold.it/130x100" >
+                                <img class="mt-1" src="http://placehold.it/130x100" >
+                                <img class="mt-1" src="http://placehold.it/130x100" >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFour">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -91,10 +162,11 @@
                               <div class="accordion-body">
                                 Картина маслом за 3 часа! <br>
                                 Вместе со мной Вы напишете картину маслом на холсте. <br>
-                                Фотографии с мастер-класса смотрите в <a href="https://vk.com/konstantinov.artist?w=wall-133788376_35%2Fall">вконтакте</a>.
+                                Фотографии с мастер-классов можно посмотреть в <a href="#">альбоме</a>.
                               </div>
                             </div>
-                          </div>
+                        </div>
+      
                       </div>
                 </div>
             </section>
