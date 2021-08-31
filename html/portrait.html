@@ -7,19 +7,21 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    
     <title>Портреты</title>
 
     <style>
-      img {
-        height: 300px;
+      .img-into-box {
         object-fit: cover;
+        width: 100%;
+        height: 100%;
       }
-      .row div {
-        text-align: center;
+      .box-height {
+        height: 300px;
       }
       @media (max-width: 600px) {
-        img {
+        .box-height {
           height: 200px;
         }
       }
@@ -55,24 +57,78 @@
   
   <div class="row">
 
-    <div class="col-6 col-md-4 col-lg-3 border border-dark mb-3">
-      <img src="https://sun9-45.userapi.com/impf/c837137/v837137921/1603c/XvRIjLqZj9I.jpg?size=600x513&quality=96&sign=11510699dccd384d7c97d376c52f00df&type=album" class="mw-100">
-    </div>
-    <div class="col-6 col-md-4 col-lg-3 border border-dark mb-3">
-      <img src="https://sun9-29.userapi.com/impf/c636717/v636717921/51faf/aWYmMsPxTCk.jpg?size=1524x2160&quality=96&sign=3331bfd92493574e43e0ded88b90b139&type=album" class="mw-100">
-    </div>
-    <div class="col-6 col-md-4 col-lg-3 border border-dark mb-3">
-      <img src="https://sun9-63.userapi.com/impf/c837731/v837731921/24ed0/-EXJprgIOW8.jpg?size=696x1080&quality=96&sign=149983b2bd7e9fc74a1d6f54d25374c0&type=album" class="mw-100">
-    </div>
-    <div class="col-6 col-md-4 col-lg-3 border border-dark mb-3">
-      <img src="https://sun9-54.userapi.com/impf/c837137/v837137921/16094/EpJ3lk9ctDo.jpg?size=700x571&quality=96&sign=8f069b288e4866b06eb19095b29e2d89&type=album" class="mw-100">
-    </div>
-    <div class="col-6 col-md-4 col-lg-3 border border-dark mb-3">
-      <img src="https://sun9-69.userapi.com/impf/c837138/v837138921/13ee5/FVlN1n_6vt4.jpg?size=816x1080&quality=96&sign=d109ea6aacf56fda2d1481528702b51a&type=album" class="mw-100">
+    <div class="col-6 col-md-4 col-lg-3 mb-3 box-height">
+      <a data-fancybox="gallery" href="https://sun9-17.userapi.com/impf/c636724/v636724921/64096/FMYsO2HEnoI.jpg?size=1620x2000&quality=96&sign=dd526c6e4a48eb69b04f2021c6a2902f&type=album">
+        <img src="https://sun9-17.userapi.com/impf/c636724/v636724921/64096/FMYsO2HEnoI.jpg?size=1620x2000&quality=96&sign=dd526c6e4a48eb69b04f2021c6a2902f&type=album" class="img-into-box">
+      </a>
     </div>
 
+    <div class="col-6 col-md-4 col-lg-3 mb-3 box-height">
+      <a data-fancybox="gallery" href="https://sun9-69.userapi.com/impf/c837138/v837138921/13ee5/FVlN1n_6vt4.jpg?size=816x1080&quality=96&sign=d109ea6aacf56fda2d1481528702b51a&type=album">
+        <img src="https://sun9-69.userapi.com/impf/c837138/v837138921/13ee5/FVlN1n_6vt4.jpg?size=816x1080&quality=96&sign=d109ea6aacf56fda2d1481528702b51a&type=album" class="img-into-box">
+      </a>
+    </div>
 
-    
+    <div class="col-6 col-md-4 col-lg-3 mb-3 box-height">
+      <a data-fancybox="gallery" href="https://sun9-29.userapi.com/impf/c636717/v636717921/51faf/aWYmMsPxTCk.jpg?size=1524x2160&quality=96&sign=3331bfd92493574e43e0ded88b90b139&type=album">
+        <img src="https://sun9-29.userapi.com/impf/c636717/v636717921/51faf/aWYmMsPxTCk.jpg?size=1524x2160&quality=96&sign=3331bfd92493574e43e0ded88b90b139&type=album" class="img-into-box">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 box-height">
+      <a data-fancybox="gallery" href="https://sun9-54.userapi.com/impf/c837137/v837137921/16094/EpJ3lk9ctDo.jpg?size=700x571&quality=96&sign=8f069b288e4866b06eb19095b29e2d89&type=album">
+        <img src="https://sun9-54.userapi.com/impf/c837137/v837137921/16094/EpJ3lk9ctDo.jpg?size=700x571&quality=96&sign=8f069b288e4866b06eb19095b29e2d89&type=album" class="img-into-box">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 box-height">
+      <a data-fancybox="gallery" href="https://sun9-63.userapi.com/impf/c837731/v837731921/24ed0/-EXJprgIOW8.jpg?size=1393x2160&quality=96&sign=6184b7cdd2178c6b0c2c8cbbae30e22c&type=album">
+        <img src="https://sun9-63.userapi.com/impf/c837731/v837731921/24ed0/-EXJprgIOW8.jpg?size=1393x2160&quality=96&sign=6184b7cdd2178c6b0c2c8cbbae30e22c&type=album" class="img-into-box">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 box-height">
+      <a data-fancybox="gallery" href="https://sun9-48.userapi.com/impf/c837138/v837138921/15d66/WYw-5KVZEs8.jpg?size=2281x2160&quality=96&sign=fcd5ec45b15a21ecb8555bd12a1137e3&type=album">
+        <img src="https://sun9-48.userapi.com/impf/c837138/v837138921/15d66/WYw-5KVZEs8.jpg?size=2281x2160&quality=96&sign=fcd5ec45b15a21ecb8555bd12a1137e3&type=album" class="img-into-box">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 box-height">
+      <a data-fancybox="gallery" href="https://sun9-17.userapi.com/impf/c636724/v636724921/64096/FMYsO2HEnoI.jpg?size=1620x2000&quality=96&sign=dd526c6e4a48eb69b04f2021c6a2902f&type=album">
+        <img src="https://sun9-17.userapi.com/impf/c636724/v636724921/64096/FMYsO2HEnoI.jpg?size=1620x2000&quality=96&sign=dd526c6e4a48eb69b04f2021c6a2902f&type=album" class="img-into-box">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 box-height">
+      <a data-fancybox="gallery" href="https://sun9-69.userapi.com/impf/c837138/v837138921/13ee5/FVlN1n_6vt4.jpg?size=816x1080&quality=96&sign=d109ea6aacf56fda2d1481528702b51a&type=album">
+        <img src="https://sun9-69.userapi.com/impf/c837138/v837138921/13ee5/FVlN1n_6vt4.jpg?size=816x1080&quality=96&sign=d109ea6aacf56fda2d1481528702b51a&type=album" class="img-into-box">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 box-height">
+      <a data-fancybox="gallery" href="https://sun9-29.userapi.com/impf/c636717/v636717921/51faf/aWYmMsPxTCk.jpg?size=1524x2160&quality=96&sign=3331bfd92493574e43e0ded88b90b139&type=album">
+        <img src="https://sun9-29.userapi.com/impf/c636717/v636717921/51faf/aWYmMsPxTCk.jpg?size=1524x2160&quality=96&sign=3331bfd92493574e43e0ded88b90b139&type=album" class="img-into-box">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 box-height">
+      <a data-fancybox="gallery" href="https://sun9-54.userapi.com/impf/c837137/v837137921/16094/EpJ3lk9ctDo.jpg?size=700x571&quality=96&sign=8f069b288e4866b06eb19095b29e2d89&type=album">
+        <img src="https://sun9-54.userapi.com/impf/c837137/v837137921/16094/EpJ3lk9ctDo.jpg?size=700x571&quality=96&sign=8f069b288e4866b06eb19095b29e2d89&type=album" class="img-into-box">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 box-height">
+      <a data-fancybox="gallery" href="https://sun9-63.userapi.com/impf/c837731/v837731921/24ed0/-EXJprgIOW8.jpg?size=1393x2160&quality=96&sign=6184b7cdd2178c6b0c2c8cbbae30e22c&type=album">
+        <img src="https://sun9-63.userapi.com/impf/c837731/v837731921/24ed0/-EXJprgIOW8.jpg?size=1393x2160&quality=96&sign=6184b7cdd2178c6b0c2c8cbbae30e22c&type=album" class="img-into-box">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 box-height">
+      <a data-fancybox="gallery" href="https://sun9-48.userapi.com/impf/c837138/v837138921/15d66/WYw-5KVZEs8.jpg?size=2281x2160&quality=96&sign=fcd5ec45b15a21ecb8555bd12a1137e3&type=album">
+        <img src="https://sun9-48.userapi.com/impf/c837138/v837138921/15d66/WYw-5KVZEs8.jpg?size=2281x2160&quality=96&sign=fcd5ec45b15a21ecb8555bd12a1137e3&type=album" class="img-into-box">
+      </a>
+    </div>
+
   </div>
 
   <a href="gallery.html" class="fs-5">Вернуться в галерею</a>
@@ -81,5 +137,8 @@
 
 <!-- Вариант 1: Bootstrap в связке с Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- FancyBox -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
 </body>
 </html>
